@@ -1,0 +1,17 @@
+html {
+
+
+
+.container {
+  width: 90%;
+  max-width: 1120px;
+  background-color: orange;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
