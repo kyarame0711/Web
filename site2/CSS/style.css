@@ -1,17 +1,32 @@
-html {
+  :root{
+       --my-nav-width: 30%;
 
-
-
-.container {
-  width: 90%;
-  max-width: 1120px;
-  background-color: orange;
-  margin: 0 auto;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-}
+  }
+  *{
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  header{
+    width: 100%;
+    height: 10vh;
+    background-color: #f0f0f0;
+  }
+  nav{
+    width: var(--my-nav-width);
+    height: 80vh;
+    background-color: #e0e0e0;
+  }
+  main{
+    width: calc(100% - var(--my-nav-width));
+    height: 80vh;
+    background-color: #d0d0d0;
+  }
+  footer{
+    width: 100%;
+    height: 10vh;
+    background-color: #c0c0c0;
+  }
