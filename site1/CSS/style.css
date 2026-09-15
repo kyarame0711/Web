@@ -1,0 +1,887 @@
+/* =========================
+   全体
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Yu Gothic", sans-serif;
+    color: #111;
+    background-color: #FFFFFF;
+}
+.site {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color:  #F7F3E8;
+}
+
+
+/* =========================
+   ヘッダー
+========================= */
+
+.header {
+    height: 82px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px 20px;
+
+    border-top: 3px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+
+/* ロゴ */
+
+/* ロゴ全体 */
+.logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    white-space: nowrap;
+}
+
+/* ロゴ画像 */
+.logo img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+/* 文字部分 */
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 田端果樹園 */
+.logo-text h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+/* tabata kajuen */
+.logo-text p {
+    margin: 0;
+    font-family: serif;
+    font-style: italic;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* =========================
+   ナビゲーション
+========================= */
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.navigation a {
+    color: #111;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.navigation a:hover {
+    opacity: 0.6;
+}
+
+
+/* =========================
+   メインビジュアル
+========================= */
+
+.main-visual {
+    position: relative;
+
+    width: 100%;
+    height: 500px;
+
+    overflow: hidden;
+}
+
+.main-visual > img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* 写真の上の文字 */
+
+.main-text {
+    position: absolute;
+
+    left: 25px;
+    top: 165px;
+
+    color: white;
+
+    text-shadow:
+        1px 1px 4px #333,
+        -1px -1px 4px #333;
+}
+
+.main-text h2 {
+    margin: 0 0 10px;
+
+    font-size: 46px;
+    font-weight: normal;
+
+    line-height: 1.8;
+}
+
+.main-text p {
+    margin: 0;
+
+    font-size: 23px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   3つの紹介ボックス
+========================= */
+
+.features {
+    background-color: #F7F3E8;
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 14px;
+
+    padding: 42px 15px 36px;
+}
+
+/* 3つのボックス */
+.feature-box {
+    width: calc((100% - 28px) / 3);
+
+    min-height: 175px;
+
+    border: 1px solid #777;
+
+    background-color: white;
+
+    padding: 10px 15px;
+}
+
+/* 見出し */
+.feature-box h3 {
+    margin: 0 0 22px;
+
+    text-align: center;
+
+    font-size: 27px;
+    font-weight: normal;
+}
+
+/* 説明 */
+.feature-box p {
+    margin: 0;
+
+    font-size: 16px;
+
+    line-height: 2;
+}
+
+
+/* =========================
+   フッター
+========================= */
+
+footer {
+    background-color: #444;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+/* =========================
+   2ページ目
+========================= */
+
+.producer-page {
+    background-color: #F7F3E8;
+    padding: 45px 60px 60px;
+}
+
+
+/* ページタイトル */
+
+.page-title {
+    margin: 0 0 55px;
+
+    text-align: center;
+
+    font-size: 52px;
+    font-weight: normal;
+}
+
+
+/* =========================
+   生産者紹介
+========================= */
+
+.producer-area {
+    width: 90%;
+
+    margin: 0 auto 55px;
+
+    display: flex;
+
+    gap: 4px;
+}
+
+
+/* 左の文章 */
+
+.producer-text {
+    width: 50%;
+
+    height: 300px;
+
+    border: 1px solid #777;
+
+    padding: 14px 20px;
+
+    background-color: white;
+}
+
+.producer-text p {
+    margin: 0 0 4px;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+
+/* 右の写真 */
+
+.producer-photo {
+    width: 50%;
+    height: 300px;
+
+    background-color: black;
+
+    overflow: hidden;
+}
+
+.producer-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================
+   こだわり・歴史
+========================= */
+
+.bottom-area {
+    width: 90%;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    gap: 5px;
+}
+
+
+/* ボックス */
+
+.about-box {
+    width: 50%;
+
+    height: 260px;
+
+    border: 1px solid #777;
+
+    padding: 5px 20px;
+
+    background-color: white;
+}
+
+
+/* 見出し */
+
+.about-box h3 {
+    margin: 0 0 8px;
+
+    text-align: center;
+
+    font-size: 42px;
+    font-weight: normal;
+}
+
+
+/* 本文 */
+
+.about-box p {
+    margin: 0 0 8px;
+
+    font-size: 16px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================
+   ヘッダー
+========================= */
+
+.header {
+    height: 82px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 5px 20px;
+
+    background-color: white;
+
+    border-top: 3px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+/* メニュー */
+
+.navigation {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+.navigation a {
+    color: #111;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+}
+
+.navigation a:hover {
+    opacity: 0.6;
+}
+
+
+
+/* =========================
+   フッター
+========================= */
+
+footer {
+    background-color: #444;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+/* =========================
+   3ページ目 果実紹介
+========================= */
+
+.fruit-page {
+    background-color: #F7F3E8;
+    padding: 25px 40px 50px;
+}
+
+
+/* タイトル */
+
+.fruit-page .page-title {
+    margin: 0 0 55px;
+
+    text-align: center;
+
+    font-size: 48px;
+    font-weight: normal;
+}
+
+
+/* =========================
+   果物3つ
+========================= */
+
+.fruit-list {
+    width: 90%;
+
+    margin: 0 auto 35px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 35px;
+}
+
+
+/* 果物ボックス */
+
+.fruit-box {
+    width: 33.333%;
+
+    height: 335px;
+
+    border: 1px solid #777;
+
+    text-align: center;
+
+    padding: 14px;
+
+    background-color: white;
+}
+
+
+/* 果物写真 */
+
+.fruit-box img {
+    width: 150px;
+    height: 155px;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin: 0 auto 8px;
+}
+
+
+/* 果物名 */
+
+.fruit-box h3 {
+    margin: 5px 0 8px;
+
+    font-size: 18px;
+
+    font-weight: normal;
+}
+
+
+/* 果物情報 */
+
+.fruit-box p {
+    margin: 3px 0;
+
+    font-size: 16px;
+
+    line-height: 1.5;
+}
+/* =========================
+   4ページ目 商品紹介
+========================= */
+
+.product-page {
+    background-color: #F7F3E8;
+    padding: 25px 40px 50px;
+}
+
+
+/* タイトル */
+
+.product-page .page-title {
+    margin: 0 0 55px;
+
+    text-align: center;
+
+    font-size: 48px;
+    font-weight: normal;
+}
+
+
+/* =========================
+   商品一覧
+========================= */
+
+.product-list {
+    width: 92%;
+
+    margin: 0 auto 48px;
+
+    display: flex;
+
+    gap: 10px;
+
+    justify-content: space-between;
+}
+
+
+/* 商品ボックス */
+
+.product-box {
+    width: 25%;
+    height: 335px;
+
+    border: 1px solid #777;
+
+    text-align: center;
+
+    padding: 12px;
+
+    background-color: white;
+}
+
+
+/* 商品画像 */
+
+.product-box img {
+    width: 125px;
+    height: 165px;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin: 0 auto 8px;
+}
+
+
+/* 商品名 */
+
+.product-box h3 {
+    margin: 5px 0 10px;
+
+    font-size: 17px;
+
+    font-weight: normal;
+
+    line-height: 1.5;
+}
+
+
+/* 商品価格 */
+
+.product-box p {
+    margin: 5px 0;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   保存方法・おすすめポイント
+========================= */
+
+.product-info {
+    width: 90%;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    gap: 30px;
+}
+
+
+/* 情報ボックス */
+
+.info-box {
+    width: 50%;
+
+    height: 210px;
+
+    border: 1px solid #777;
+
+    padding: 10px 25px;
+
+    background-color: white;
+}
+
+
+/* 見出し */
+
+.info-box h3 {
+    margin: 0 0 15px;
+
+    font-size: 30px;
+
+    font-weight: normal;
+}
+
+
+/* 本文 */
+
+.info-box p {
+    margin: 0 0 10px;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+/* =========================
+   営業案内・アクセス
+========================= */
+
+.access-page {
+    background-color:   #F7F3E8;
+
+    padding: 65px 40px 60px;
+
+    min-height: 750px;
+}
+
+
+/* 4つのボックス */
+
+.access-grid {
+    width: 90%;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 55px 25px;
+}
+
+
+/* ボックス */
+
+.access-box {
+    height: 275px;
+
+    border: 1px solid #777;
+
+    text-align: center;
+
+    padding: 30px 15px;
+
+    background-color: white;
+}
+
+
+/* 見出し */
+
+.access-box h2 {
+    margin: 0 0 15px;
+
+    font-size: 28px;
+
+    font-weight: normal;
+}
+
+
+/* 本文 */
+
+.access-box p {
+    margin: 10px 0;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* アクセスの住所 */
+
+.access-box .address {
+    text-align: left;
+
+    margin-top: 5px;
+}
+
+
+/* 電話番号 */
+
+.phone {
+    margin-top: 70px;
+
+    font-size: 25px;
+}
+
+.phone small {
+    display: block;
+
+    margin-top: 2px;
+
+    font-size: 14px;
+}
+/* =========================
+   5ページ目 注文案内
+========================= */
+
+.order-page {
+    background-color: #F7F3E8;
+    padding: 20px 30px 60px;
+}
+
+
+/* タイトル */
+
+.order-page .page-title {
+    margin: 0 0 35px;
+
+    text-align: center;
+
+    font-size: 48px;
+    font-weight: normal;
+}
+
+
+/* =========================
+   注文方法
+========================= */
+
+.order-method {
+    width: 94%;
+
+    margin: 0 auto 78px;
+
+    display: flex;
+
+    gap: 16px;
+}
+
+
+/* 店舗・オンライン */
+
+.order-box {
+    width: 50%;
+    height: 255px;
+
+    border: 1px solid #777;
+
+    text-align: center;
+
+    padding: 0 20px;
+
+    background-color:white;
+}
+
+
+/* 見出し */
+
+.order-box h3 {
+    margin: 0 0 45px;
+
+    font-size: 28px;
+    font-weight: normal;
+}
+
+
+/* 説明 */
+
+.order-box p {
+    margin: 8px 0;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   お支払い方法
+========================= */
+
+.payment {
+    width: 94%;
+
+    height: 235px;
+
+    margin: 0 auto;
+
+    border: 1px solid #777;
+
+    padding: 5px 20px;
+
+    background-color:white;
+}
+
+
+/* タイトル */
+
+.payment > h3 {
+    margin: 0 0 25px;
+
+    text-align: center;
+
+    font-size: 28px;
+    font-weight: normal;
+}
+
+
+/* 3つを横並び */
+
+.payment-list {
+    display: flex;
+
+    justify-content: space-around;
+
+    text-align: center;
+}
+
+
+/* 支払い方法 */
+
+.payment-box {
+    width: 33.333%;
+}
+
+
+/* 支払い方法の名前 */
+
+.payment-box h4 {
+    margin: 0 0 10px;
+
+    font-size: 21px;
+    font-weight: normal;
+}
+
+
+/* 説明 */
+
+.payment-box p {
+    margin: 0;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
