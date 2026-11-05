@@ -862,3 +862,458 @@ footer p {
 
     line-height: 1.8;
 }
+/*スマホ*/
+@media screen and (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+
+    .feature-box {
+        width: 100%;
+    }
+}
+
+/* =========================
+   スマホ表示用の設定
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    /* ページ全体 */
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .site {
+        width: 100%;
+    }
+
+    /* ヘッダー */
+    .header {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* ロゴ */
+    .logo {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logo img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .logo-text h1 {
+        font-size: 23px;
+    }
+
+    .logo-text p {
+        font-size: 12px;
+    }
+
+    /* メニュー */
+    .navigation {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navigation a {
+        font-size: 12px;
+        white-space: normal;
+    }
+
+    /* メイン画像 */
+    .main-visual {
+        width: 100%;
+        height: 350px;
+    }
+
+    .main-visual > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* メインの文字 */
+    .main-text {
+        left: 15px;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .main-text h2 {
+        font-size: clamp(22px, 6vw, 30px);
+        line-height: 1.5;
+    }
+
+    .main-text p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .main-text br {
+        display: none;
+    }
+
+    /* 3つの紹介 */
+    .features {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 25px 15px;
+    }
+
+    .feature-box {
+        width: 100%;
+        min-height: auto;
+        padding: 20px 15px;
+    }
+
+    .feature-box h3 {
+        font-size: 22px;
+    }
+
+    .feature-box p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .feature-box br {
+        display: none;
+    }
+}
+
+/* 果実・商品紹介 スマホ対応 */
+@media screen and (max-width: 768px) {
+
+    .fruit-page,
+    .product-page {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    /* 果物一覧 */
+    .fruit-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .fruit-box {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .fruit-box img {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* 商品一覧 */
+    .product-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product-box {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .product-box img {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* 保存方法・おすすめポイント */
+    .product-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .info-box {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+}
+
+/* 果実・商品紹介 スマホ対応 */
+@media screen and (max-width: 768px) {
+
+    .fruit-page,
+    .product-page {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    /* 果物一覧 */
+    .fruit-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .fruit-box {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .fruit-box img {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* 商品一覧 */
+    .product-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .product-box {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .product-box img {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* 保存方法・おすすめポイント */
+    .product-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .info-box {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+}
+
+/* =========================
+   生産者紹介 スマホ対応
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    /* ページ全体 */
+    .producer-page {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    /* 生産者紹介 */
+    .producer-area {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* 紹介文 */
+    .producer-text {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .producer-text p {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    .producer-text br {
+        display: none;
+    }
+
+    /* 生産者の写真 */
+    .producer-photo {
+        width: 100%;
+        height: auto;
+    }
+
+    .producer-photo img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+
+    /* こだわり・歴史 */
+    .bottom-area {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .about-box {
+        width: 100%;
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .about-box p {
+        font-size: 14px;
+        line-height: 1.9;
+    }
+
+    .about-box br {
+        display: none;
+    }
+
+}
+
+/* =========================
+   注文案内 スマホ対応
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    /* ページ全体 */
+    .order-page {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    /* 注文方法 */
+    .order-method {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .order-box {
+        width: 100%;
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .order-box h3 {
+        font-size: 20px;
+    }
+
+    .order-box p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    /* お支払い方法 */
+    .payment {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .payment-list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .payment-box {
+        width: 100%;
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .payment-box h4 {
+        font-size: 18px;
+    }
+
+    .payment-box p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+}
+
+/* =========================
+   営業案内・アクセス スマホ対応
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    /* ページ全体 */
+    .access-page {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    /* 4つの案内ボックス */
+    .access-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .access-box {
+        width: 100%;
+        height: auto;
+        min-height: 150px;
+        padding: 20px 15px;
+    }
+
+    .access-box h2 {
+        font-size: 20px;
+    }
+
+    .access-box p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .access-box .address {
+        overflow-wrap: anywhere;
+    }
+
+    .phone {
+        font-size: 20px;
+    }
+
+    .phone small {
+        font-size: 12px;
+    }
+
+}
